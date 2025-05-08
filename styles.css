@@ -5,7 +5,7 @@ body,html{
 .container{
     height: 100%;
     display: grid;
-    grid-template-columns: minmax(200px, 18fr) 82fr;
+    grid-template-columns: minmax(200px, 15fr) 85fr;
     grid-template-rows: 18fr 82fr;
 
 }
@@ -29,16 +29,22 @@ body,html{
     background-color: whitesmoke;
     display: grid;
     grid-auto-flow: column;
+    z-index: 1;
     grid-template-rows: 40fr 60fr;
+    grid-template-columns:50px auto auto 200px auto auto auto;
     gap: 10px;
     padding: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
 }
 .search_bar{
-    background-color: grey;
+    /* background-color: grey; */
     border-radius: 10px;
     grid-column: 2/4;
+}
+
+input{
+    width: 100%;
 }
 
 
@@ -67,4 +73,53 @@ body,html{
     border-left-color: orange;
     border-radius: 5px;
     height: 150px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); */
+
 }
+
+
+  .setting-card, .dashboard_title{
+    padding: 4px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  svg {
+    vertical-align: middle;
+    fill: currentColor;
+  }
+
+  .notification_icon{
+    grid-column: 5/6;
+  }
+
+  .profile_icon_small{
+    grid-column: 6/7;
+  }
+  .profile_name{
+    grid-column: 7/8;
+  }
+
+  .profile_icon_large{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: end;
+
+
+  }
+  .greeting{
+    grid-row: 2/3;
+    overflow: visible;
+  }
+
+  .nus_icon{
+    grid-row: 2/3;
+    grid-column: 6/8
+  }
+
+  .search_icon{
+    text-align: end;
+
+
+  }
